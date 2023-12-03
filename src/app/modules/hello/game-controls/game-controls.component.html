@@ -1,0 +1,22 @@
+
+
+
+<div class="control-container" (keydown.enter)="handleCustom('up')">
+  <p class="white">// use keyboard</p>
+  <p class="white">// arrows to play</p>
+
+  <div>
+    <div class="flex-center up-margin">
+      <app-game-arrow [arrow]="arrows.up"
+                      (click)="handleCustom('up')"
+      />
+    </div>
+    <div class="flex-center">
+      <app-game-arrow [arrow]="arrows.left" (click)="handleCustom('left')"
+      />
+      <app-game-arrow [arrow]="arrows.down" (click)="handleCustom('down')"/>
+      <app-game-arrow [arrow]="arrows.right" (click)="handleCustom('right')"/>
+    </div>
+  </div>
+
+</div>

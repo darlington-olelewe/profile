@@ -1,0 +1,10 @@
+.container{
+  width: 291px;
+  margin-right: 27px;
+}
+.title{
+  color: var(--light-blue-color);
+}
+.span{
+  color: var(--primary-text-color);
+}

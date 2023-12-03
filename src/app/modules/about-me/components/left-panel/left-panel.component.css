@@ -1,0 +1,38 @@
+.flex{
+  display: flex;
+}
+
+.left-panel{
+  display: none;
+  height: 100vh;
+}
+
+.panel{
+  margin:33px auto;
+  width: 24px;
+  height: 24px;
+}
+
+.outer-left{
+  border: var(--border-1-px);
+}
+
+@media (min-width: 1001px) {
+  .left-panel{
+    display: block;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    border: var(--border-1-px);
+  }
+
+  .outer-left{
+    border: var(--border-1-px);
+  }
+
+
+}
+
+p{
+  color: white;
+}

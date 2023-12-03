@@ -1,0 +1,14 @@
+
+
+
+<div class="container">
+  <h4 class="title">Project {{index + 1}} <span class="span">/ _{{card.title}}</span></h4>
+  <div [style.background-image]="'url('+card.image+')'" >
+    <img [src]="card.icon" alt="logo">
+
+    <div>
+      <p>{{card.description}}</p>
+      <app-view-project/>
+    </div>
+  </div>
+</div>

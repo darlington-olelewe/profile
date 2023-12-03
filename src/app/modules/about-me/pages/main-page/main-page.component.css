@@ -1,0 +1,9 @@
+.layout{
+  display: flex;
+}
+
+@media (min-width: 1001px){
+  .layout{
+    display: block;
+  }
+}

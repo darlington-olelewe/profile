@@ -1,0 +1,7 @@
+
+<p class="white">// food left</p>
+<div class="five_x_five_grid">
+  <img *ngFor="let food of foods" src="{{food}}" alt="food icon"/>
+</div>
+
+<button (click)="reduceByOne()">remove one</button>

@@ -1,0 +1,13 @@
+
+.container{
+
+}
+
+
+@media (min-width: 1001px){
+  .container{
+    display: flex;
+    height: 1fr;
+  }
+
+}

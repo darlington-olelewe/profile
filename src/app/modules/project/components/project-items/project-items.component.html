@@ -1,0 +1,9 @@
+<div>
+  {{getPicks().join(", ")}}
+</div>
+
+<div>
+  <app-project-card *ngFor="let card of projects; index as index"
+                    [card]="card" [index]="index"
+  />
+</div>

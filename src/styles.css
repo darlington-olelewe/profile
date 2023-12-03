@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+  --background-blue-color: #011627;
+  --primary-text-color: #607B96;
+  --active-link-color: #FEA55F;
+  --main-font-family: "Fira Code", serif;
+  --light-blue-color: #4D5BCE;
+  --light-green-color: #43D9AD;
+  --light-orange-color: #E99287;
+  --stroke-color : #1E2D3D;
+  --white-color : #E5E9F0;
+  --border-1-px : solid 1px var(--stroke-color);
+}
+
+*{
+  box-sizing: border-box;
+  font-family: "Fira Code", serif;
+  margin: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-blue-color);
+  color: var(--primary-text-color);
+}
+.page{
+  position: fixed;
+  top: 56px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+@media (min-width: 1001px){
+  .page{
+
+  }
+}
+

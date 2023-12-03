@@ -1,0 +1,31 @@
+<div class="header-container">
+  <div class="left-header">
+    <div class="logo sides-space">
+      <div class="right-side-space">darlington-olelewe</div>
+      <div class="icon-section">
+        <ng-container *ngIf="hamburgIsOpen">
+          <img ngSrc="/assets/hamburg-open.svg" alt="open-state" height="16" width="18" (click)="toggleHamburg()">
+        </ng-container>
+        <ng-container *ngIf="!hamburgIsOpen">
+          <img ngSrc="/assets/hamburg-close.svg" alt="close-state" height="16" width="16"  (click)="toggleHamburg()">
+        </ng-container>
+      </div>
+    </div>
+
+    <ul class="show">
+      <a class="sides-space" routerLink="hello" routerLinkActive="active">_hello</a>
+      <a class="sides-space" routerLink="about-me" routerLinkActive="active">_about-me</a>
+      <a class="sides-space" routerLink="project" routerLinkActive="active">_projects</a>
+    </ul>
+
+    <ul *ngIf="!hamburgIsOpen" class="no-show">
+      <a class="sides-space" routerLink="hello" routerLinkActive="active">_hello</a>
+      <a class="sides-space" routerLink="about-me" routerLinkActive="active">_about-me</a>
+      <a class="sides-space" routerLink="project" routerLinkActive="active">_projects</a>
+    </ul>
+
+  </div>
+  <div class="contact sides-space">
+    _contact-me
+  </div>
+</div>

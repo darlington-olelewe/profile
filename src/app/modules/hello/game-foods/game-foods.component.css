@@ -1,0 +1,17 @@
+.food{
+  border: solid 1px red;
+}
+
+.white{
+  font-size: 14px;
+  color: white;
+  margin: 10px 0;
+}
+
+.five_x_five_grid{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  margin: 0 auto;
+}

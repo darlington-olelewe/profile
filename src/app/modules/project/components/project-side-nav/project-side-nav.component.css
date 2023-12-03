@@ -1,0 +1,28 @@
+.left-section{
+  width: 100%;
+  height: 40px;
+  color: white;
+  padding-left: 22px;
+  background-color: #1E2D3D;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.arrow{
+  width: 8.5px;
+  height: 6px;
+}
+
+@media (min-width: 1001px){
+  .left-section{
+    background-color: var(--background-blue-color);
+    border: var(--border-1-px);
+    width: 311px;
+  }
+  .container{
+    border-right: var(--border-1-px);
+    height: 100%;
+  }
+
+}

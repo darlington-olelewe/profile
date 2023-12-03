@@ -1,0 +1,7 @@
+<div class="container">
+  <div class="left-section" *ngIf="show"><img srcset="/assets/bullet-down.svg" (click)="toggleShow()" class="arrow"/> projects</div>
+  <div class="left-section" *ngIf="!show"><img srcset="/assets/bullet-right.svg" (click)="toggleShow()" class="arrow"/> projects</div>
+  <div *ngIf="show">
+    <app-project-switch *ngFor="let check of checks" [check]="check" (click)="unselectAtIndex(check.index)"/>
+  </div>
+</div>

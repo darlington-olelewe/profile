@@ -1,0 +1,14 @@
+
+<div class="game-window">
+  <div class="game-grids">
+    <div class="cell" *ngFor="let segment of snake" [style.left]="segment.x * cellSize + 'px'" [style.top]="segment.y * cellSize + 'px'"></div>
+    <div class="food" [style.left]="food.x * cellSize + 'px'" [style.top]="food.y * cellSize + 'px'"></div>
+
+  </div>
+<div>GAME OVER!</div>
+<div>WELL DONE!</div>
+  <button *ngIf="gameMode=='START'">start-game</button>
+  <button *ngIf="gameMode=='IN_PROGRESS'">start-game</button>
+  <button>start-again</button>
+  <button>play-again</button>
+</div>
